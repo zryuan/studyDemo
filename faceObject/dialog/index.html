@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dialogContainer{
+            width: 300px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .title{
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .footerBtn{
+            display: flex;
+        }
+
+        .content{
+            min-height: 100px;
+        }
+
+        .cancleBtn,.confirmBtn{
+            flex: 1;
+            text-align: center;
+            background: chocolate;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .confirmBtn{
+           background: cyan;
+           margin-left: 15px;
+        }
+
+        .showDialogBtn{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 5px;
+            background: palegoldenrod;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="dialogContainer">
+        <div class="title">标题</div>
+        <div class="content">内容</div>
+        <div class="footerBtn">
+            <div class="cancleBtn">取消</div>
+            <div class="confirmBtn">确定</div>
+        </div>
+    </div> -->
+
+    <div class="showDialogBtn">显示</div>
+
+    <script type="module">
+        import Dialog from './index.js';
+
+        const dialog = new Dialog({
+            success(){
+                console.log('success');
+            },
+            error(){
+                console.log('cancel');
+            }
+        });
+
+        console.log(dialog);
+
+        document.querySelector('.showDialogBtn')
+            .addEventListener('click',() => {
+                dialog.show();
+            });
+    </script>
+</body>
+</html>

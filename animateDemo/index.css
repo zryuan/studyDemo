@@ -1,0 +1,30 @@
+#app{
+    width: 700px;
+    height: 700px;
+    margin: 100px auto;
+    border: 1px solid palegoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animateEle1,.animateEle2,.animateEle3,.animateEle4,.animateEle5,.animateEle6{
+    margin-left: 15px;
+    transition: 4s;
+    transform: translateY(0);
+}
+
+.header-1,.footer-4{
+    width: 30px;
+    height: 30px;
+    background: palegreen;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.body-1,.body-2,.body-3,.body-4,.body-5,.body-6{
+    background: paleturquoise;
+    width: 30px;
+    height: 150px;
+    border-radius: 15px;
+}

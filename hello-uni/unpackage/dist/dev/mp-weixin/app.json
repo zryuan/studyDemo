@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/message/message"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "黑马",
+    "navigationBarBackgroundColor": "#00aaff",
+    "backgroundColor": "#ff0000",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home-active.png"
+      },
+      {
+        "text": "信息",
+        "pagePath": "pages/message/message",
+        "iconPath": "static/tab/weixin.png",
+        "selectedIconPath": "static/tab/weixin-active.png"
+      }
+    ],
+    "color": "#C0C0C0",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black"
+  },
+  "usingComponents": {}
+}

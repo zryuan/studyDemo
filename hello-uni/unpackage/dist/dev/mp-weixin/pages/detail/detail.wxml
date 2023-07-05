@@ -1,0 +1,1 @@
+<view><view class="box1" hover-class="box1-active"><view class="box2" hover-class="box2-activer" hover-stop-propagation="{{true}}" hover-start-time="{{1000}}" hover-stay-time="{{1000}}"></view></view></view>

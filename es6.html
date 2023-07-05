@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // let arr = [1,3,3,3,4,5,6];
+    // let set = new Set(arr);
+    // set.add(7);
+    // set.add(7);
+
+
+    // let arr = ['red','blue','yellow'];
+
+    // let set = new Set(arr);
+
+    // console.log(set[0]);
+    // console.log(set.keys());
+    // console.log(set.values());
+    // console.log(set.entries());
+
+    // let obj1 = {
+    //     name: 1,
+    //     age: 18
+    // }
+
+    // let obj2 = new Map();
+
+    // obj2.set(obj1,'userName');
+
+    // // obj2[obj1] = 'qwewq';
+
+    // console.log(obj2.get(obj1));
+
+
+    // let arr = [1,3,5,7,2,6,4];
+
+    // console.log(arr.sort());
+    
+    // arr.sort((r1,r2) => r2 - r1);
+
+    // console.log(arr);
+
+    // function custrator(){
+    //     console.log(this)
+    // };
+
+    // custrator.prototype.set = function(){
+    //     console.log(123);
+    // }
+
+    // // console.log(custrator.__proto__);
+    // custrator();
+    function Person(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    Object.prototype.sleep = function(){
+        console.log('shuijiao');
+    }
+
+    const user = new Person('xiaozhang',18);
+
+    user.sleep();
+</script>
+</html>

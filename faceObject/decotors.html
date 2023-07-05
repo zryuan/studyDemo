@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+
+        class Person{
+            constructor(){
+                this.name = 'zhangsan';
+            }
+
+            say(){
+                console.log('hello');
+            }
+        }
+
+        function say2(){
+            console.log('Are you ok?');
+        }
+
+        // function allSay(fn1,fn2){
+        //     return function(){
+        //         fn1();
+        //         fn2();
+        //     }
+        // }
+
+        Function.prototype.decotorFn = function(fn){
+            this();
+            fn();
+        }
+
+        const user = new Person();
+
+        user.say.decotorFn(say2);
+
+        // const say = allSay(user.say,say2);
+
+        // say();
+    </script>
+</body>
+</html>

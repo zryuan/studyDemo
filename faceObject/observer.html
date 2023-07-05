@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import Observer from './observer.js';
+
+        function fn1(name){
+            console.log('点击了fn1',name);
+        }
+
+        function fn2(){
+            console.log('点击了fn2');
+        }
+
+        const obser = new Observer();
+
+        obser.addEvent('myClick',fn1,'我是fn1');
+        obser.addEvent('myClick',fn2,'我是fn2');
+        obser.removeEvent('myClick');
+
+        obser.triggerEvent('myClick');
+
+        console.log(obser);
+
+    </script>
+</body>
+</html>

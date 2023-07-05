@@ -1,0 +1,70 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/detail/detail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+			"path": "pages/index/index"
+		},
+		{
+		    "path" : "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "小黑马",
+				"navigationBarBackgroundColor":"#4CD964",
+				"navigationBarTextStyle":"white",
+				"h5": {
+					"titleNView": {
+						"backgroundColor":"#3F536E",
+						"titleText":"大黑马"
+					},
+					"pullToRefresh":{
+						"color":"#F0AD4E"
+					}
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "黑马",
+		"navigationBarBackgroundColor": "#00aaff",
+		"backgroundColor": "#ff0000",
+		"enablePullDownRefresh": true,
+		"backgroundTextStyle": "light"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tab/home.png",
+				"selectedIconPath":"static/tab/home-active.png"
+			},
+			{
+				"text":"信息",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/tab/weixin.png",
+				"selectedIconPath":"static/tab/weixin-active.png"
+			}
+		],
+		"color":"#C0C0C0",
+		"selectedColor":"#ff0000",
+		"backgroundColor":"#fff",
+		"borderStyle":"black"
+	},
+	"condition": {
+		"current": 0,
+		"list": [
+			{
+				"name":"详情页",
+				"path":"pages/detail/detail",
+				"query":"id=8"
+			}
+		]
+	}
+}
